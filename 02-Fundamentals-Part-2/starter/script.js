@@ -391,9 +391,8 @@ TEST DATA: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.9
 GOOD LUCK 😀
 */
 
-const markBMI = {
-    firstName: 'Mark',
-    lastName: 'Miller',
+/*const markBMI = {
+    fullName: 'Mark Miller',
     mass: 78,
     height: 1.69,
 
@@ -404,8 +403,7 @@ const markBMI = {
 };
 
 const johnBMI = {
-    firstName: 'John',
-    lastName: 'Smith',
+    fullName: 'John Smith',
     mass: 92,
     height: 1.95,
 
@@ -415,4 +413,32 @@ const johnBMI = {
     }
 }
 
-console.log(`${markBMI.firstName} ${markBMI.lastName}'s BMI (${markBMI.valueBMI}) is higher than ${johnBMI.firstName} ${johnBMI.lastName}'s (${johnBMI.valueBMI}).`);
+console.log(johnBMI.calcBMI(), markBMI.calcBMI());
+
+if (markBMI.valueBMI > johnBMI.valueBMI) {
+    console.log(`${markBMI.fullName}'s BMI (${markBMI.valueBMI}), is higher than ${johnBMI.fullName}'s (${johnBMI.valueBMI}).`)
+} else if (johnBMI.valueBMI > markBMI.valueBMI) {
+    console.log(`${johnBMI.fullName}'s BMI (${markBMI.valueBMI}), is higher than ${markBMI.fullName} (${markBMI.valueBMI}).`)
+}*/
+
+// Iteration_The for Loop
+// for loop keeps running while condition is TRUE 
+
+/*for (let rep = 1; rep <= 10; rep++) {
+    console.log(`lifting weights repitition ${rep}...`);
+}*/
+
+// Looping Arrays, Breaking and Continuing 
+
+const jonas = [
+    'Jonas',
+    'Schmedtmann',
+    2037 - 1991,
+    'teacher',
+    ['Michael', 'Peter', 'Steven'],
+    true
+];
+
+for (let i = 0; i < jonas.length; i++) {
+    console.log(jonas[i], typeof jonas[i]);
+}
