@@ -549,7 +549,7 @@ const tips = [calcTips(bills[0]), calcTips(bills[1]), calcTips([bills[bills.leng
 const total = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
 console.log(bills, tips, total);*/
 
-const calcTips = function (bill) {
+/*const calcTips = function (bill) {
     return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
 };
 const bill = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
@@ -574,4 +574,24 @@ const calcAverage = function (arr) {
 }
 console.log(calcAverage(2, 3, 7));
 console.log(calcAverage(totals));
-console.log(calcAverage(tips));
+*/
+
+
+// challenge 1 
+for (let i = 1; i <= 20; i++) {
+    console.log(i);
+}
+// challenge 2
+const friends = ['John', 'Peter', 'Steven', 'Michael'];
+
+for (let i = 0; i < friends.length; i++) {
+    console.log(friends[i]);
+}
+
+// challenge 3
+for (let i = 1; i <= 20; i++) {
+    if (i % 2) {
+        continue;
+    }
+    console.log(i);
+}
