@@ -578,7 +578,7 @@ console.log(calcAverage(totals));
 
 
 // challenge 1 
-for (let i = 1; i <= 20; i++) {
+/*for (let i = 1; i <= 20; i++) {
     console.log(i);
 }
 // challenge 2
@@ -590,8 +590,8 @@ for (let i = 0; i < friends.length; i++) {
 
 // challenge 3
 for (let i = 1; i <= 20; i++) {
-    if (i % 2) {
-        continue;
+    if (i % 2 === 0) {
+        console.log(i);
     }
     console.log(i);
-}
+}*/
