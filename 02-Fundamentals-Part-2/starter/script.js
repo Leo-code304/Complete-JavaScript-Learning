@@ -9,7 +9,7 @@ if (hasDriversLicense) console.log('I can drive :D');
 // const interface = 'Audio';
 // const private = 343; */
 
-// Functions 
+// Functions
 /*function logger() {
     console.log('My name is leonard');
 }
@@ -31,7 +31,7 @@ console.log(appleOrangeJuice);
 */
 
 ////////////////////////////////////////
-// Function declaration 
+// Function declaration
 /*function calcAge1(birthyear) {
     return 2026 - birthyear;
 }
@@ -49,8 +49,8 @@ console.log(newAge);
 */
 
 //////////////////////////////////////////
-// Arrow function 
-//// Writing a single block of code 
+// Arrow function
+//// Writing a single block of code
 /*const calcAge3 = birthyear => 2026 - birthyear;
 const newAge1 = calcAge3(2005);
 console.log(newAge1);
@@ -68,7 +68,7 @@ console.log(yearsUntilRetirement(1998, 'Patrick'));
 */
 
 /////////////////////////////////////////
-// Functions calling other functions 
+// Functions calling other functions
 /*function cutFruitPieces(fruit) {
     return fruit * 4;
 }
@@ -106,7 +106,7 @@ console.log(yearsUntilRetirement(1970, 'Mr White'));
 */
 
 //////////////////////////////////////////////////////////
-// Coding challenge #1 
+// Coding challenge #1
 /*Back to the two gymnastics teams, the Dolphins and the Koalas! There is a new gymnastics discipline, which works differently.
 Each team competes 3 times, and then the average of the 3 scores is calculated(so one average score per team).
 A team ONLY wins if it has at least DOUBLE the average score of the other team.Otherwise, no team wins!
@@ -126,7 +126,7 @@ HINT: To check if number A is at least double number B, check for A >= 2 * B.App
 GOOD LUCK 😀
 */
 
-// Test data 1 
+// Test data 1
 /*const calcAverage = (a, b, c) => (a + b + c) / 3;
 let scoreDolphins = calcAverage(44, 23, 71);
 let scoreKoalas = calcAverage(65, 54, 49);
@@ -152,7 +152,7 @@ checkWinner(scoreDolphins, scoreKoalas);
 */
 
 // Assignment on functions
-// Assignment 1 
+// Assignment 1
 /*const describeCountry = function (country, population, capitalCity) {
     return `${country} has ${population} million people and it's
 capital city is ${capitalCity}.`;
@@ -198,7 +198,7 @@ const maximumPopulation = describePopulation('Australia', 19);
 console.log(maximumPopulation);
 */
 
-// Introduction to Arrays 
+// Introduction to Arrays
 /*const friends = ['Michael', 'Stephen', 'Peter', 'James'];
 console.log(friends);
 
@@ -233,7 +233,7 @@ const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length -
 console.log(ages);
 */
 
-// Basic array Operations (Methods) 
+// Basic array Operations (Methods)
 /*const friends = ['Michael', 'Stephen', 'Peter', 'James'];
 
 //This method adds element to an array.
@@ -283,7 +283,6 @@ HINT: Remember that an array needs a value in each position, and that value can 
 
 GOOD LUCK 😀
 */
-
 
 /*const calcTips = function (bill) {
     return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
@@ -340,7 +339,7 @@ console.log(jonas);
 console.log(`${jonas.firstName} has ${jonas.friends.length} friends, and his best friend is called ${jonas.friends[0]}.`);
 */
 
-// Object Methods 
+// Object Methods
 
 /*const jonas = {
     firstName: 'Jonas',
@@ -378,7 +377,7 @@ console.log(jonas.age);
 console.log(jonas.getSummary());
 */
 
-// Coding Challeng #3 
+// Coding Challeng #3
 /*
 Let's go back to Mark and John comparing their BMIs! This time, let's use objects to implement the calculations! Remember: BMI = mass / height ** 2 = mass / (height * height). (mass in kg and height in meter)
 
@@ -422,7 +421,7 @@ if (markBMI.valueBMI > johnBMI.valueBMI) {
 }*/
 
 // Iteration_The for Loop
-// for loop keeps running while condition is TRUE 
+// for loop keeps running while condition is TRUE
 
 /*for (let rep = 1; rep <= 10; rep++) {
     console.log(`lifting weights repitition ${rep}...`);
@@ -497,7 +496,7 @@ for (let exercise = 1; exercise < 4; exercise++) {
     }
 }*/
 
-// The while Loop 
+// The while Loop
 // for (let rep = 1; rep <= 10; rep++) {
 //     console.log(`lifting weights repitition ${rep}...`);
 // }
@@ -516,7 +515,6 @@ while (dice !== 6) {
     dice = Math.trunc(Math.random() * 6) + 1;
     if (dice === 6) console.log('Loop is about to end...');
 }*/
-
 
 ///////////////////////////////////////
 // Coding Challenge #4
@@ -576,8 +574,7 @@ console.log(calcAverage(2, 3, 7));
 console.log(calcAverage(totals));
 */
 
-
-// challenge 1 
+// challenge 1
 /*for (let i = 1; i <= 20; i++) {
     console.log(i);
 }
@@ -595,3 +592,93 @@ for (let i = 1; i <= 20; i++) {
     }
     console.log(i);
 }*/
+
+/////////////////////////////////////////////////////
+// for (let rep = 1; rep <= 10; rep++) {
+//   console.log(`lifting weights repitition ${rep}...`);
+// }
+
+const jonas = [
+  'Jonas',
+  'Schmedtmann',
+  2037 - 1991,
+  2026 - 2003,
+  'teacher',
+  ['Michael', 'Peter', 'Steven'],
+  true,
+];
+
+const types = [];
+
+for (let i = 0; i < jonas.length; i++) {
+  //   console.log(jonas[i]);
+
+  types.push(jonas[i]);
+}
+console.log(types);
+
+// const years = [1991, 2007, 1969, 2020];
+// const ages = [];
+
+// for (let i = 0; i < years.length; i++) {
+//   ages.push(2027 - years[i]);
+// }
+// console.log(ages);
+
+/*console.log('--- ONLY STRINGS ---');
+for (let i = 0; i < jonas.length; i++) {
+  if (typeof jonas[i] !== 'string') continue;
+
+  console.log(jonas[i], typeof jonas[i]);
+}*/
+
+/*console.log('--- ONLY NUMBER ---');
+for (let i = 0; i < jonas.length; i++) {
+  if (typeof jonas[i] === 'number') break;
+
+  console.log(jonas[i], typeof jonas[i]);
+}*/
+
+// for (let i = 0; i < jonas.length; i++) {
+//   if (typeof jonas[i] !== 'string') continue;
+
+//   console.log(jonas[i], typeof jonas[i]);
+// }
+
+// for (let i = jonas.length - 1; i >= 0; i--) {
+//   console.log(i, jonas[i]);
+// }
+
+/*for (let exercise = 1; exercise < 4; exercise++) {
+  console.log(`......starting exercise ${exercise}`);
+
+  for (let reps = 1; reps < 4; reps++) {
+    console.log(`Exercise ${exercise} : Lifting weights repetition ${reps}`);
+  }
+}*/
+
+// The while loop
+
+for (let rep = 1; rep <= 10; rep++) {
+  console.log(`Repitition ${rep}`);
+}
+
+// SN: writing the while loop is kinda risky cause it almost always crashes my browser.
+// Question :  How do i fix this ?
+// Observation: the browser tends to crash when the console.log is given without the increment being stated, to fix this, we,ll have to turn off auto save
+console.log('----- The while loop -----');
+
+let rep = 1;
+while (rep <= 10) {
+  console.log(`Workout repitition ${rep}`);
+  rep++;
+}
+
+let dice = Math.trunc(Math.random() * 6 + 1);
+while (dice !== 6) {
+  console.log(`You roled a ${dice}`);
+  dice++;
+
+  if (dice === 6) console.log('..... loop is about to end!');
+}
+// console.log(dice);
